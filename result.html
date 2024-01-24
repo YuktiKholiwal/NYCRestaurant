@@ -1,0 +1,51 @@
+<!-- templates/result.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        h1, p {
+        text-align: center;
+        margin-top: 50px; /* Adjust the top margin as needed */
+        }
+
+        p{
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    
+        body{
+            background-color: papayawhip;
+        }
+        </style>
+</head>
+<body>
+    <h1>Result:</h1>
+    <script>
+        var selected_model = '{{ selected_model }}';
+        var prediction = '{{ prediction }}'; // Replace with your actual prediction value
+
+        if (selected_model === 'linear') {
+            document.write('<p>Linear Regression Score Prediction: ' + prediction + '</p>');
+        } else if (selected_model === 'logistic') {
+            document.write('<p>Logistic Regression Grade Prediction: ' + prediction + '</p>');
+        } else if (selected_model === 'kmeans') {
+            document.write('<p>KMeans Prediction: ' + prediction + '</p>');
+        } else if (selected_model === 'knn') {
+            document.write('<p>KNN Grade Prediction: ' + prediction + '</p>');
+        } else if (selected_model === 'naive') {
+            document.write('<p>Naive Bayes Critical Flag Prediction: ' + prediction + '</p>');
+        } else if (selected_model === 'random_forest') {
+            document.write('<p>Random Forest Grade Prediction: ' + prediction + '</p>');
+        } else if (selected_model === 'svm') {
+            document.write('<p>SVM Classifier Inspection Type Prediction: ' + prediction + '</p>');
+        } else {
+            document.write('<p>Invalid model selection</p>');
+        }
+    </script>
+</body>
+</html>
+

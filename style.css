@@ -1,0 +1,82 @@
+/* Add this to your existing style.css file or include it in the head of your HTML document */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('image.jpg');
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 .form_heading{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Adjust this to control the spacing between forms */
+}
+
+.form-container {
+    width: 500px; /* Set the desired width for your forms */
+    margin: 40px; /* Increased margin to create space between the forms */
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(249, 249, 249, 0.8);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add additional styling for form elements as needed */
+form label {
+    display: block;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: red;
+}
+
+
+select{
+    font-size: 15px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}

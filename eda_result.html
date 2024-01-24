@@ -1,0 +1,31 @@
+<!-- templates/eda_result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA Result</title>
+    <style>
+    .result {
+    text-align: center;
+    margin-top: 50px; /* Adjust the top margin as needed */
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    body{
+        background-color: papayawhip;
+    }
+    </style>
+</head>
+<body>
+    <h1 class="result">EDA Result</h1>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="EDA Plot">
+</body>
+</html>
